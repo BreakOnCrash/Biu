@@ -26,9 +26,9 @@ struct AlertMessage: Identifiable {
 
 
 struct ContentView: View {
-    @State private var openOptions: Bool = false
-    @State private var disableReSign: Bool = false
+    @State var disableReSign: Bool = false
     
+    @State private var openOptions: Bool = false
     @State private var targetApp = "Select"
     @State private var injectDylib = "Select"
     @State private var alertMsg: AlertMessage?
